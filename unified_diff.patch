@@ -1,0 +1,22 @@
+diff --git a/usr/share/lipstick-jolla-home-qt5/switcher/SwitcherItem.qml b/usr/share/lipstick-jolla-home-qt5/switcher/SwitcherItem.qml
+index 9bf4912..4389154 100644
+--- a/usr/share/lipstick-jolla-home-qt5/switcher/SwitcherItem.qml
++++ b/usr/share/lipstick-jolla-home-qt5/switcher/SwitcherItem.qml
+@@ -474,6 +474,17 @@ EditableGridDelegate {
+         }
+     }
+ 
++    Rectangle {
++        color: "transparent"
++        anchor.left: wrapper.left
++        anchor.right: wrapper.right
++        anchor.top: wrapper.top
++        height: 15
++        Text {
++            value: window.title
++        }
++    }
++
+     states: [
+         State {
+             name: "moving"
